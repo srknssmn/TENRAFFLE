@@ -124,7 +124,7 @@ function App() {
   }
 
   const handleTicketIncrease = () => {
-    if (ticketValue < 5) {
+    if (ticketValue < ticketMax) {
       setTicketValue(ticketValue + 1)
     }
   }
@@ -150,7 +150,7 @@ function App() {
         }
       }
     } else {
-        window.alert("You can't buy that many tickets! Max. 5")
+        window.alert("You can't buy that many tickets!")
     }
   }
 
